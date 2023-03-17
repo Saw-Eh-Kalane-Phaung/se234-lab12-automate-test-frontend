@@ -1,11 +1,11 @@
 version: "3.3"
 services:
-  frontend:
+  backend:
     image: dto80/se234-lab12
     ports:
-      - "8085:8080s"
+      - 8001:8080
 
-  backend:
-    image: saw96/234-deploylab-fronted:latest
+  frontend:
+    image: saw96/234-deploylab12-fronted
     ports:
-      - "8086:80"
+      - 8002:80
